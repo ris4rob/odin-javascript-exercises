@@ -1,14 +1,14 @@
 const sumAll = function (a, b) {
   let result = 0;
-  
-  if (typeof a === 'number') && (typeof b === 'number') {
-    if a < b {
+
+  if (typeof a === 'number' && typeof b === 'number' && a >= 0 && b >= 0) {
+    if (a < b) {
       do {
         result += a;
         a++;
       } while (a <= b);
       return result;
-    } else if b > a {
+    } else if (a > b) {
       do {
         result += b;
         b++;
@@ -18,6 +18,6 @@ const sumAll = function (a, b) {
   } else {
     return 'ERROR';
   }
-
+};
 // Do not edit below this line
 module.exports = sumAll;
