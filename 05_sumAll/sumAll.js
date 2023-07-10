@@ -1,7 +1,7 @@
 const sumAll = function (a, b) {
   let result = 0;
   
-  if typeof a === 'number' && typeof b === 'number' {
+  if (typeof a === 'number') && (typeof b === 'number') {
     if a < b {
       do {
         result += a;
@@ -13,8 +13,10 @@ const sumAll = function (a, b) {
         result += b;
         b++;
       } while (b <= a);
-      return result
+      return result;
     }
+  } else {
+    return 'ERROR';
   }
 
 // Do not edit below this line
