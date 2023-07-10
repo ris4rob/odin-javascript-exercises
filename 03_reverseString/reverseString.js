@@ -2,6 +2,7 @@ const reverseString = function (string) {
   // let result = '';
   // let length = string.length;
 
+  // refactored code here to one line
   // if (string === '') {
   //   return string;
   // } else {
@@ -11,7 +12,6 @@ const reverseString = function (string) {
   //   result = result.concat(string[0]);
   //   return result;
   // }
-  // refactored code here to one line
   return string.split('').reverse().join('');
 };
 
